@@ -1,0 +1,12 @@
+	<script type="text/javascript" src="js/jQuery.js"></script>
+        <script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+        <script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+
+        <script type="text/javascript">
+        $(document).ready(function(){
+        $('#menu').localScroll({
+         target:'body'
+        });
+        });
+        </script>
+		

@@ -1,0 +1,165 @@
+		<?php
+		error_reporting (E_ALL & ~ E_NOTICE & ~ E_DEPRECATED);
+		session_start();
+		include_once("conexao.php");
+
+		?>
+		<html lang="pt-br">
+		<title>Casa Do Corpo</title>
+		<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="icon" href="ico/heart.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/estilo.css" rel="stylesheet">
+		<link href="Hover-master/css/hover.css" rel="stylesheet" media="all">
+		<link rel="stylesheet" href="anime/anime.css">
+        <link rel="stylesheet" href="anime/animette.css">
+		<script type="text/javascript" src="js/jQuery.js"></script>
+        <link rel="stylesheet"  href="css/carousel.css">
+		<script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+		<script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+			 <!--propriedade de rolagem da página -->
+			<script type="text/javascript">
+			$(document).ready(function(){
+			$('#menu').localScroll({
+			 target:'body'
+			});
+			$('#voltar').localScroll({
+			 target:'body'
+			});
+			});
+			</script>
+			 <!--Fanpage-->
+			<div id="fb-root"></div>
+			<script>
+				(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+			</script>
+		   
+		</head>
+		<body>
+		<div class="container-fluid" id="topo">
+		 <header id="cabecalho">
+		         <!-- Fixed navbar -->
+			 <nav class="navbar navbar-default navbar-fixed-top">
+			      <div class="container">
+			        <div class="navbar-header">
+			          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			          </button>
+			          <a class="navbar-brand animated rubberBand" href="index.html" title="Página Inícial"><img id="logo" src="img/logo2.png"></a>
+			        </div>
+			        <div id="navbar" class="navbar-collapse collapse">
+			          <ul id="menu" class="nav navbar-nav">
+			            <li class="active hvr-float-shadow"><a href="index.html" title="Inicio">Home</a></li>
+			            <li><a class="hvr-float-shadow" href="index.html" title="Nossos Serviços">Serviços</a></li>
+			            <li class="dropdown">
+			              <a href="#" class="dropdown-toggle hvr-float-shadow" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"  title="Cadatro,Idealizadoras,Sobre">Mais <span class="caret"></span></a>
+			              <ul class="dropdown-menu">
+			                <li><a class="hvr-bounce-out" href="index.html" title="Sobre nós">Sobre</a></li>
+			                <li><a class="hvr-bounce-out" href="index.html" title="Fundadoras">Idealizadoras</a></li>
+			                <li><a class="hvr-bounce-out" href="index.html">O Que Oferecemos</a></li>
+			                <li role="separator" class="divider"></li>
+			                <li><a class="hvr-bounce-out" href="cadastro.html" title="Cadastre-se">Fale Conosco</a></li>
+			                
+			              </ul>
+			            </li>
+			          </ul>
+			        </div><!--/.nav-collapse -->
+			      </div>
+			    </nav>
+
+		     </div>
+		   </header>
+
+		<div class="row" id="formu">
+			<div class="col-md-6" id="duvida">
+				<h3><p>"Agende uma consulta e tire suas dúvidas,
+				nossos serviços.
+				Temos atendentes prontos para tirar qualquer dúvida.<br>
+				<span>Na Casa Do Corpo</span> possuímos alto nível de conhecimento técnico,
+				conforto,conveniência,<br>seriedade em todos os assuntos e transparência com voçe consumidor."</p></h3>
+
+					 <?php
+					  if(isset($_SESSION['msgCad'])){
+						  echo $_SESSION['msgCad'];
+						  unset($_SESSION['msgCad']);
+						  
+					  }
+					 ?>
+			</div>
+			<div class="col-md-4 col-md-offset-1" id="cad">
+			<h4>Entre Em Contato</h4>
+				<form action="insere_form.php" method="POST">
+					<input type="text" class="form-control"  for="formGroupInputLarge" name="nome" placeholder="Nome Completo" required ><br>
+					<input type="email" class="form-control"  name="email" placeholder="Email" required ><br>
+					<input type="text" class="form-control"  name="telefone" placeholder="(XX)-xxxx-xxxxx" required ><br>
+					<input type="date" class="form-control" name="dtnasc" required><br>
+					<input type="text" class="form-control" name="cep" id="cep" placeholder="Cep" required><br>
+					<input type="text" class="form-control" name="endereço" placeholder="Endereço" required id="endereço"><br>
+					<textarea type="text" class="form-control"  id="cMsg" cols="45" rows="10" name="msg"  placeholder="Digite Sua Mensagem" ></textarea>
+					<input id="enviar" type="submit" class="btn btn-defaultbtn-block" value="Enviar" placeholder="nome">
+
+				 </form>
+			 </div>
+			
+		
+		 </div>
+		
+			<footer class="row" id="rodape">
+				<div class="col-md-4">
+					<h4 class="titu_foo"> <img src="ico/map.ico">-LOCALIZAÇÃO</h4>
+					<iframe id="locali" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14695.893574889436!2d-43.194411823960344!3d-22.951206959826095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997fe5efee9a25%3A0x3c77ca60168b5ea!2sBotafogo%2C+Rio+de+Janeiro+-+RJ!5e0!3m2!1spt-BR!2sbr!4v1486295852659" width="280" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<div class="col-md-4">
+					
+						<h4 class="titu_foo"><img src="ico/phone1.ico"> -Telefone</h4>
+						  <p>(021)3807-8087</p>
+						  <p>(021)98361-06988</p>
+						  <p>(021)98295-0695</p>
+						<h4 class="titu_foo"><img src="ico/directions.ico"> -Endereço</h4>
+						<p>Voluntário da Pátria.</p>
+						<p>45,1005,Botafogo - Rio de Janeiro</p>
+						<p>DESENVOLVIDO POR SANDRO GOMES</p>
+						<img id="logor" src="img/logo_rodape.png">
+
+
+						<!--<h4 class="titu_foo">Compartilhe</h4>
+						<a href="" target="blank"><img id="img_fund" src="ico/Googleplus.ico" class="img-responsive" alt="Googleplus"></a>
+						<a href="" target="blank"><img id="img_fund" src="ico/Twitter.ico" class="img-responsive" alt="Twitter"></a>
+						<a href="" target="blank"><img id="img_fund" src="ico/Youtube_light.ico" class="img-responsive" alt="Youtube_light"></a>-->
+
+
+
+				</div>
+				<div class="col-md-4">
+					
+						<h4 class="titu_foo"> <img src="ico/facebook1.ico">-Fanpage</h4>
+						<div  id="locali" class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="250" data-height="300"
+						data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+						<blockquote cite="https://www.facebook.com/facebook"
+						class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+					
+				</div>
+				
+				<div id="voltar" class="hvr-bob btn btn-default btn-sm"><a href="#topo">VOLTAR AO TOPO</a></div>
+			</footer>
+		</div>
+			
+		 </div>
+		</body>
+		</html>

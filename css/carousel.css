@@ -1,0 +1,134 @@
+/ * ESTILOS GLOBAIS
+-------------------------------------------------- -benzóico.
+/ * Preenchimento abaixo do rodapé e corpo mais leve texto * /
+
+Corpo
+  Padding-bottom: 40px;
+  Cor: # 5a5a5a;
+}
+
+
+/ * PERSONALIZE O NAVBAR
+-------------------------------------------------- -benzóico.
+
+/ * Classe especial em .container em torno de .navbar, usado para posicioná-lo no lugar. -benzóico.
+.navbar-wrapper {
+  Posição: absoluta;
+  Top: 0;
+  Direita: 0;
+  Esquerda: 0;
+  Z-índice: 20;
+}
+
+/ * Flip ao redor do preenchimento para exibição adequada em viewports estreito * /
+.navbar-wrapper> .container {
+  Padding-right: 0;
+  Padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  Padding-direito: 15px;
+  Padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  Largura: auto;
+}
+
+
+/ * PERSONALIZE O CARROSSEL
+-------------------------------------------------- -benzóico.
+
+/ * Classe básica de carrossel * /
+Carrossel
+  Altura: 500px;
+  Margem-fundo: 60px;
+}
+/ * Desde o posicionamento da imagem, precisamos ajudar a legenda * /
+.carousel-caption {
+  Z-índice: 10;
+}
+
+/ * Declara alturas por causa do posicionamento do elemento img * /
+.carousel .item {
+  Altura: 500px;
+  Background-color: # 777;
+}
+.carousel-inner> .item> img {
+  Posição: absoluta;
+  Top: 0;
+  Esquerda: 0;
+  Min-largura: 100%;
+  Altura: 500px;
+}
+
+
+/ * CONTEÚDO DE MARKETING
+-------------------------------------------------- -benzóico.
+
+/ * Centro alinhar o texto dentro das três colunas abaixo do carrossel * /
+.marketing .col-lg-4 {
+  Margin-bottom: 20px;
+  Text-align: center;
+}
+.marketing h2 {
+  Font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  Margem direita: 10px;
+  Margem esquerda: 10px;
+}
+
+
+/ * Featurettes
+------------------------- * /
+
+.featurette-divider {
+  Margem: 80px 0; / * Espaço fora do Bootstrap <hr> mais * /
+}
+
+/ * Fina os títulos de marketing * /
+.featurette-heading {
+  Font-weight: 300;
+  Altura da linha: 1;
+  Espaçamento entre letras: -1px;
+}
+
+
+/ * CSS RESPONSIVO
+-------------------------------------------------- -benzóico.
+
+@media (min-width: 768px) {
+  / * Posicionamento Navbar foo * /
+  .navbar-wrapper {
+    Margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    Padding-direito: 15px;
+    Padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    Padding-right: 0;
+    Padding-left: 0;
+  }
+
+  / * O navbar torna-se destacado do topo, assim que nós arredondamos os cantos * /
+  .navbar-wrapper .navbar {
+    Limite-raio: 4px;
+  }
+
+  / * Bump up tamanho do conteúdo carrossel * /
+  .carousel-caption p {
+    Margin-bottom: 20px;
+    Font-size: 21px;
+    Altura da linha: 1,4;
+  }
+
+  .featurette-heading {
+    Font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    Margin-top: 120px;
+  }
+}

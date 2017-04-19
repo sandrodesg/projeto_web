@@ -1,0 +1,363 @@
+		<?php
+		error_reporting (E_ALL & ~ E_NOTICE & ~ E_DEPRECATED);
+		session_start();
+		include_once("conexao.php");
+
+		?>
+		<html lang="pt-br">
+		<title>Casa Do Corpo</title>
+		<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="icon" href="ico/heart.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/estilo.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/caixa.css">
+		<link href="Hover-master/css/hover.css" rel="stylesheet" media="all">
+		<link rel="stylesheet" href="anime/anime.css">
+        <link rel="stylesheet" href="anime/animette.css">
+        <link rel="stylesheet"  href="css/carousel.css">   
+        <link href="css/scrolling-nav.css" rel="stylesheet">
+        <script type="text/javascript" src="js/jQuery.js"></script>
+		<script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		 <script type="text/javascript" src="js/main.js"></script>
+
+			 <script>
+				  $( function() {
+				    $( "#accordion" ).accordion();
+				  } );
+			  </script>
+			 <!--Fanpage-->
+			<div id="fb-root"></div>
+			<script>
+				(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+			</script>
+		
+		</head>
+		<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+		<div class="container-fluid" id="topo">
+		 <header id="cabecalho">
+		         <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand animated rubberBand" href="#" title="Página Inícial"><img id="logo" src="img/logo2.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="menu" class="nav navbar-nav">
+            <li class="active hvr-float-shadow"><a class="page-scroll" href="#"  title="Inicio">Home</a></li>
+            <li><a class="hvr-float-shadow page-scroll" href="#1" alt="Nossos Serviços">Serviços</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle hvr-float-shadow" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" title="Cadatro,Idealizadoras,Sobre">Mais <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a class="hvr-bounce-out page-scroll" href="#2" title="Sobre nós">Sobre</a></li>
+                <li><a class="hvr-bounce-out " href="#3" title="Fundadoras">Idealizadoras</a></li>
+                <!--<li><a class="hvr-bounce-out" href="#btn">O Que Oferecemos</a></li>-->
+                <li role="separator" class="divider"></li>
+                <li><a class="hvr-bounce-out" href="cadastro.html" title="Cadastre-se">Fale Conosco</a></li>
+                
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+		     </div>
+		   </header>
+		
+	
+		 <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="img/slidd1.jpg" alt="First slide">
+      
+        </div>
+        <div class="item">
+          <img class="second-slide" src="img/slidd4.jpg" alt="Second slide">
+      
+        </div>
+        <div class="item">
+          <img class="third-slide" src="img/slidd5.jpg" alt="Third slide">
+  
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+           <div class="row"   id="1">
+           	<div class="col-md-12"><h1></h1></div>
+           </div>
+
+ 
+		 <div calss="row">
+
+			<div class="col-md-12">
+				<h3 id="titu_serv">Principais Serviços</h3>
+			</div>
+		 </div>
+
+		 <div class="row"  id="servicos" >
+			 <div class="col-md-4" id="for_filho">
+			 <h4 class="titulo_filho">Drenagem linfática</h4>
+
+			<p>A drenagem linfática é uma técnica de massagem que trabalha o sistema linfático,
+			estimulando-o a trabalhar de forma rápida, movimentando a linfa até os gânglios linfáticos.
+			Essa técnica foi desenvolvida em 1932 pelo terapeuta dinamarquês Vodder e sua esposa e,
+			posteriormente, foi aprimorada, tornando-se popular.
+			A linfa é o líquido existente nos vasos dos gânglios linfáticos. 
+			É caracterizada por sua viscosidade, ausência de cor, 
+			por conter substâncias orgânicas e inorgânicas, resíduos e toxinas.
+			A linfa é o líquido existente nos vasos dos gânglios linfáticos. 
+			É caracterizada por sua viscosidade, ausência de cor, 
+			por conter substâncias orgânicas e inorgânicas, resíduos e toxinas.</p>
+			<img src="img/banner3.jpg" class="img-responsive" alt="Responsive image">
+
+			</div>
+			 <div class="col-md-4" id="for2_filho">
+			 <h4 class="titulo_filho">Fisíoterapia</h4>
+
+			<p>A fisioterapia é uma reabilitação que ajuda a fortalecer ossos e os músculos para que as pessoas possam voltar a andar ou recuperar movimentos que por algum acidente, 
+				ou doença tenham perdido, a fisioterapia também é indicado para pessoas de idades
+			 para que elas possam ter uma boa qualidade de vida, e também não percam movimentos que com a idade é normal perder.</p>
+			 <p>Também ajuda na reabilitação de fraturas de atletas para que eles possam fortalecer os seus músculos e voltar as atividades em pouco tempo, porém a mesma tem um auto 
+			 custo e algumas pessoas podem não ter condições de pagar, por isso que alguns postos de saúde oferecem o tratamento gratuitamente.</p>
+			<img src="img/banner2.jpg" class="img-responsive" alt="Responsive image">
+
+			 </div>
+			 <div class="col-md-4" id="for_filho">
+			 <h4 class="titulo_filho">Massioterapia</h4>
+
+			<p>As massagens, além de nos beneficiarem em termos estéticos e relaxantes, podem servir como aliadas em tratamentos relacionados à saúde.
+				A massoterapia é uma técnica que consiste em um conjunto de toques exercidos com as mãos ou outras partes do corpo e aparelhos sobre determinadas regiões.
+				Indicada para aliviar dores, diminuir o estresse e a tensão, controlar as dores musculares, eliminar traumas e estimular a circulação sanguínea, as massagens precisam ser feitas por especialistas e,
+				 antes de iniciar um tratamento, o profissional deve indicar a melhor técnica para o caso.
+				Essa é uma das grandes diferenças entre a massoterapia e a massagem comum. .</p>
+			<img src="img/banner.jpg" class="img-responsive" alt="Responsive image">
+			
+			 </div>
+		 </div>
+		 <!--sobre-->
+		<div class="row" id="2">
+			<h3 id="titu_serv">Sobre a Casa do Corpo </h3>
+
+			<div class="col-md-6" id="sobre">
+			  <p id="texto"><b>		
+				<img src="img/saudepeq.png" class="img-responsive" alt="Responsive image">
+				A CASA DO CORPO</b> trás um olhar diferente para a saúde acolhento os clientes e espelhando o que há de mas profundo:
+				o corpo que funciona em todas sua potência e harmonia. Aqui voçe estímula e conhece seu corpo atrsvés da sensação,respiração,
+				percepção interiorização e descobre movimentos e partes do seu corpo que antes estavam adormecidos!
+				<b>NOSSA INTENÇÃO É IMPRIMIR UMA NOVA FORMA DE SENTIR O CORPO,REPROGRAMAR E REDESCOBRIR OS MOVIMENTOS DO CORPO COM PRAZER
+				 E ALEGRIA DE SER.Volte para casa.Oseu corpo é sua <b>Casas!</b></p></b>
+
+			  </p>
+			   <!--o que oferecemos-->
+             
+    
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <center><h3 class="modal-title" id="myModalLabel">O Que Oferecemos</h3></center>
+				      </div>
+				      <div class="modal-body">
+				        <h4>Obejetivos De Nossos Serviços</h4>
+				        <p>O objetivo além de sanar a principal queixa do paciente é acolhe-lo nesse ambiente 
+						intimista criado para proporcionar bem-estar, trazer devolta a consciência de seu próprio corpo nessa correria 
+						dos tempos modernos e inverter paradigmas, conscientizando o indivíduo que não énecessário sentir dor, mas que o importante é ter o corpo saudável para uma vida mais leve.</p><br>
+
+				        <h4>Pilares Funcional</h4>
+
+						<h5>O que é?</h5>
+
+						<p>O pilates funcional trabalha todos os grupos musculares de uma só vez, 
+						não se preocupando com apenas uma musculatura isoladamente. Os treinos são mais pesados,
+						apesar de a técnica buscar se exercitar por meio dos movimentos naturais do corpo
+						(agachar, empurrar, puxar, levantar, saltar, correr).</p><br>
+
+						<h5>Quais Beneficios</h5><br>
+
+				        <p>O principal benefício do pilates funcional aparece no fato de ele proporcionar uma movimentação melhor do corpo. Após alguns treinos, 
+						você vai sentir uma melhora também na sua resistência, coordenação, agilidade e equilíbrio.
+						Como os treinos são específicos com as necessidades de cada aluno, você vai poder corrigir aquele seu ponto fraco.Além disso,
+						os exercícios funcionais podem auxiliar a evitar possíveis lesões. Isso porque o treino melhora o equilíbrio e faz a pessoa se movimentar melhor, 
+						estando menos propícia a ter torções e contusões.</p><br>
+
+						<h5>Horário</h5><br>
+						<p>SEGUNDA Á SÁBADO DE 9:00 ÁS 18H
+						FERIADOS DE 9:00 ÁS 13H</p><br>
+
+				        <h4>Terapia Manual</h4>
+				        <h5>Cadeias Musculares</h5><br>
+
+				        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+
+				        <h5>Drenagem Linfática</h5><br>
+
+				        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				        consequat. Duis aute irure dolor in .</p>
+                          
+                        <h5>Massagem Terapeutica</h5><br>
+
+				        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+
+				         <h5>Redução Corporal RPG</h5><br>
+
+				        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				        consequat. </p><br>
+
+				        <h4>Presença Corporal</h4>
+
+				        <h5>Quais Benefícios</h5>
+				          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				        consequat.</p>
+
+				        <h5>Horário</h5><br>
+						<p>SEGUNDA Á SÁBADO DE 9:00 ÁS 18H
+						FERIADOS DE 9:00 ÁS 13H</p><br>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+				       
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			  </div>
+			
+			<div class="col-md-6" id="sobre">
+						 <h4 class="titu_direita">Missão</h4>
+						<p class="texto_direita">Preservar a saúde e a qualidade de vida das pessoas, a partir de um atendimento profissional,
+						 ético, humano e personalizado</p>
+
+			
+						 <h4 class="titu_direita">Visão</h4>
+						<p class="texto_direita">Gerar valor para nossos clientes, acionistas, equipes e a sociedade, 
+							atuando de forma sustentável.</p>
+
+			
+						 <h4 class="titu_direita">Valores</h4>
+						<p id="3" class="texto_direita">Os valores guiam a conduta de uma organização, quando planos de Missão e Visão estiverem em execução.
+						 São inegociáveis, ditando comportamentos e atitudes no funcionamento de toda estrutura organizacional
+						 e dão suporte às formas de relacionamento dos colaboradores entre si e perante os clientes, fornecedores e sociedade.</p>
+
+			</div>
+             
+			</div>
+		
+            <!--idealizadoras-->
+			<div class="row" id="fundadoras">
+				<h3 id="titu_serv"> Sobre as Idealizadoras</h3>
+				<div class="col-md-6 col-xs-12 col-sm-12">
+					
+					<h5>Kelly Valente</h5>
+					<img id="img_fund" src="img/mulher.png" class="img-responsive" alt="Responsive image">
+					<p><b>"Fisíoterapeuta</b>,graduada na Univercidade Severino Sombras de Vassouras,RJ,2004.
+						<b>Aperfeiçoamentos:</b>Métodos Pilates,Drenagem Linfática,RPG: -Redução Portural Global Philipe Souchard,
+						Cadeias Musculares e Articulares - GDS(em andamento)."</p>
+
+				</div>
+				<div class="col-md-6 col-xs-12 col-sm-12">
+					<h5>Silvia Regina Alfarth</h5>
+					<img id="img_fund" src="img/mulher2.png" class="img-responsive" alt="Responsive image">
+					<p><b>"Fisíoterapeuta</b> ,graduada na Univercidade Regional de Blumenau,2003.
+						Especializada pela Univercidade Evangélica do Paraná  - 2005.<b>Aperfeiçoamentos:</b> Método Pilates:Thereza Camarão - 2007;
+						Formada em RPG - Reeducação Postural Global Philipe Souchard - 2007,Curso de Reeducação do Movimento - Método Ivaldo Bertazzo-2010 e
+					 formação em Cadeias Musculares e Articulares - Método GDS - 2013."</p>
+                      <!--BOTÃO SAIBA MAIS-->
+					  <button id="btn" type="button" class="btn btn-primary btn-sm hvr-bounce-in" data-toggle="modal" data-target="#myModal"><img src="ico/mark.ico">Conheça Mais Nossos Serviços</button>
+
+				</div>
+				</div>
+				
+				<!--footer-->
+			<footer class="row" id="rodape">
+				<div class="col-md-4">
+					<h4 class="titu_foo"> <img src="ico/map.ico">-LOCALIZAÇÃO</h4>
+					<iframe id="locali" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14695.893574889436!2d-43.194411823960344!3d-22.951206959826095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997fe5efee9a25%3A0x3c77ca60168b5ea!2sBotafogo%2C+Rio+de+Janeiro+-+RJ!5e0!3m2!1spt-BR!2sbr!4v1486295852659" width="280" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<div class="col-md-4">
+					
+						<h4 class="titu_foo"><img src="ico/phone1.ico"> -Telefone</h4>
+						  <p>(021)3807-8087</p>
+						  <p>(021)98361-06988</p>
+						  <p>(021)98295-0695</p>
+						<h4 class="titu_foo"><img src="ico/directions.ico"> -Endereço</h4>
+						<p>Voluntário da Pátria.</p>
+						<p>45,1005,Botafogo - Rio de Janeiro</p>
+						<p>DESENVOLVIDO POR SANDRO GOMES</p>
+						<img id="logor" src="img/logo_rodape.png">
+
+
+						<!--<h4 class="titu_foo">Compartilhe</h4>
+						<a href="" target="blank"><img id="img_fund" src="ico/Googleplus.ico" class="img-responsive" alt="Googleplus"></a>
+						<a href="" target="blank"><img id="img_fund" src="ico/Twitter.ico" class="img-responsive" alt="Twitter"></a>
+						<a href="" target="blank"><img id="img_fund" src="ico/Youtube_light.ico" class="img-responsive" alt="Youtube_light"></a>-->
+
+
+
+				</div>
+				<div class="col-md-4">
+					
+						<h4 class="titu_foo"> <img src="ico/facebook1.ico">-Fanpage</h4>
+						<div  id="locali" class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="250" data-height="300"
+						data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+						<blockquote cite="https://www.facebook.com/facebook"
+						class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+					
+				</div>
+				<div id="voltar" class="hvr-bob btn btn-default btn-sm"><a href="#topo">VOLTAR AO TOPO</a></div>
+			</footer>
+		</div>
+			
+		 </div>
+		 
+		</body>
+		</html>

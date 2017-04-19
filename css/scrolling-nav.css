@@ -1,0 +1,60 @@
+/ *!
+ * Iniciar Bootstrap - Scrolling Nav (http://startbootstrap.com/)
+ * Copyright 2013-2016 Iniciar o Bootstrap
+ * Licenciado sob MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ -benzóico.
+
+Corpo
+    Largura: 100%;
+    Altura: 100%;
+}
+
+Html {
+    Largura: 100%;
+    Altura: 100%;
+}
+
+@media (min-width: 767px) {
+    .navbar {
+        Estofamento: 20px 0;
+        -webkit-transition: background .5s facilidade-in-out, preenchimento .5s facilidade-in-out;
+        -moz-transition: background .5s facilidade-in-out, preenchimento .5s facilidade-in-out;
+        Transição: fundo .5s facilidade-em-para fora, estofamento .5s facilidade-em-para fora;
+    }
+
+    .top-nav-collapse {
+        Estofamento: 0;
+    }
+}
+
+/ * Demo Sections - Você pode usá-los como guias ou excluí-los - o scroller irá trabalhar com qualquer tipo de altura, fixo, indefinido, ou com base percentual.
+O preenchimento é muito importante para se certificar de que o scrollspy pega a área certa quando rolado para. Ajuste a margem e preenchimento de seções e crianças
+Dessas seções para gerenciar a aparência do site. -benzóico.
+
+.intro-section {
+    Altura: 100%;
+    Padding-top: 150px;
+    Text-align: center;
+    Background: #fff;
+}
+
+.about-section {
+    Altura: 100%;
+    Padding-top: 150px;
+    Text-align: center;
+    Background: #eee;
+}
+
+.services-section {
+    Altura: 100%;
+    Padding-top: 150px;
+    Text-align: center;
+    Background: #fff;
+}
+
+.contact-section {
+    Altura: 100%;
+    Padding-top: 150px;
+    Text-align: center;
+    Background: #eee;
+}

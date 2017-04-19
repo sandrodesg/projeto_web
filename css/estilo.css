@@ -1,0 +1,269 @@
+ 
+ 
+ @import url('https://fonts.googleapis.com/css?family= Clicker + Script');
+ @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Work+Sans');
+ @import url('https://fonts.googleapis.com/css?family=Abel');
+ @import url('https://fonts.googleapis.com/css?family=Merienda+One');
+ @import url('https://fonts.googleapis.com/css?family=Nixie+One');
+ @import url('https://fonts.googleapis.com/css?family=Merienda+One');
+ @import url('https://fonts.googleapis.com/css?family=Passion+One');
+ @import url('https://fonts.googleapis.com/css?family=Jura:300');
+
+
+
+
+
+ 
+
+ /*@import url('https://fonts.googleapis.com/css?family=Syncopate'); font-family: 'Syncopate',
+  sans-serif;FAZER UM TEXTO COM  FONTE GRANDE usar esta fonte*/
+ 
+ 
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	
+overflow-x: hidden;
+}
+#logo{
+	position: relative;
+	bottom: 8px;
+
+}
+#navbar{overflow: hidden;}/*retirando barra de scroll*/
+
+#myCarousel{
+	margin-top: 40px;
+}
+/*=======Cadastro======*/
+#formu{
+	background-image: url('../img/s1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding:20px;
+}
+#cad{
+	margin-top: 40px;
+    padding:20px;
+	background-color:#167ce5;
+	height:650px;
+	
+}
+#cad h4{
+    font-family: 'Merienda One', cursive;
+    text-align: center;
+	color:#fff;
+}
+#duvida{
+	color: #28bfd5;
+	margin-top: 100px;
+}
+#duvida p{
+	font-family: 'Merienda One', cursive;
+    text-indent: 10px;
+}
+#duvida span{
+	
+	font-family: 'Merienda One', cursive;
+	color: #000000;
+	text-shadow:1px 1px 1px #fff;
+
+}
+#enviar{margin-top: 10px; font-family: 'Merienda One', cursive;}
+/*=================SERVIÇOS============*/
+
+#servicos{
+	padding-top:40px;
+}
+#servicos h4{
+	text-shadow: 1px 1px 1px #fff;
+	padding: 5px;
+}
+#servicos p{
+	color: #fff;
+	font-size:15px;
+	font-family: 'Abel', sans-serif;
+	text-indent: 20px;
+}
+#for2_filho{
+
+	background-color: #28bfd5;
+	height:550px;
+	
+}
+#for_filho{
+	background-color: #1b9de8;
+	height: 550px;
+	
+}
+#for{
+
+    font-family: 'Work Sans', sans-serif;
+
+}
+#titu_serv{
+     font-family: 'Merienda One', sans-serif;
+    text-shadow:2px 2px 2px #a9daf6 ;
+    color:#000000;
+	text-align: center;
+	background-color: #fff;
+
+}
+.titulo_filho{
+	color: #000000;
+	margin-top: 7px;
+	font-family: 'Work Sans', sans-serif;
+	border-bottom:  1px 50% solid #fff;
+	text-shadow: 1px 1px 1px #000000;
+}
+/*==============SOBRE%%OFERECEMOS===============*/
+#sobre{
+ 
+  height: 645px;
+  background-color: #a9daf6;
+}
+#titu_sobre{
+
+	text-align: center;
+	background-color: #fff;
+}
+#texto{
+ margin-top: 80px;
+ padding: 28px;
+ font-family: 'Abel', sans-serif;
+ font-size: 17px;
+ color:#fff;
+}
+#texto b{
+ color:#4299b5;
+}
+.titu_direita{
+  color: #fff;                       /*FAZER UM TEXTO COM  FONTE GRANDE*/
+  text-shadow:1px 1px 1px #000000;  /*missao====valores*/
+  background-color: #4299b5;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.texto_direita{
+   text-indent: 10px;
+   font-size: 18px;
+   font-family: 'Abel', sans-serif;
+   color:#fff;
+   margin-right: 10px;
+  margin-left: 10px;
+}
+/*=======IDEALIZADORAS=======*/
+/*#fundadoras{
+	
+} */
+#fundadoras h4{
+	text-align: center;
+	text-shadow: 1px 1px 1px #fff;
+}
+#fundadoras h5{
+	color:#fff;
+	text-shadow:1px 1px 3px #000000;
+	margin-left: 20px;
+	font-size: 30px;
+	border-bottom: solid #a9daf6 2px;
+	
+}
+#fundadoras p{
+	color:#fff;
+	font-size: 17px;
+	font-family: 'Abel', sans-serif;
+	padding: 5px; 
+    padding-bottom:0px;
+    background-color: #a9daf6;
+}
+#fundadoras b{color:#0f5177;font-size: 20px; }
+#img_fund{
+	float: left;
+}
+/*===============SAIBA MAIS==============*/
+.modal-body{
+	background-color: #a9daf6;
+}
+.modal-title{
+	color: #fff;                          
+	text-shadow:1px 1px 3px #000000;
+	font-family:  'Passion One', sans-serif;
+}
+.modal-body h4,h5{
+	color: #fff;
+	font-family:  'Passion One', sans-serif;
+	text-shadow: 1px 1px 1px #032949;
+}
+.modal-body p{
+	color: #fff;
+	font-family: 'Abel', sans-serif;
+	text-indent: 15px;
+}
+#btn{padding:5px;margin-left: 35px;margin-bottom: 5px; font-family: 'Merienda One', cursive;}
+/*============footer rodape===========*/
+#rodape{
+  background-color: #000000;  
+}	
+/*#rodape img{
+	margin-left:20px;  /*A EMPRESA NÃO DESEJA FAZER DIVULGAÇÃO EXTERNA
+    padding:10px;	
+}*/
+
+#locali{
+	position: relative;
+	margin-left: 5px;
+}
+footer p{
+	 font-family: 'Jura', cursive;
+	font-size: 20px;
+	margin-left: 5px;
+	color: #fff;
+}
+.titu_foo{
+   
+   font-family: 'Jura', cursive;
+   margin-left: 5px;
+   color: #fff;
+
+}
+.fb-page{
+	position: relative;
+	left: 25px;
+}
+/*=========BOTAO TOPO========*/
+#voltar {
+	 font-family: 'Merienda One', cursive;
+	margin: 15px;
+	position: relative;
+	left: 85px;	
+}
+#voltar a{
+   text-decoration: none;	
+}
+/*=======================*/
+@media screen and (min-width:480px) and (max-width:800px)/**/
+{
+  #btn{margin-left:-20px;}
+
+			
+}	
+@media screen and (min-width:640px) and (max-width:960px)/**/
+{
+  #btn{margin-left:100px;}
+
+			
+}	
+@media screen and (min-width:640px) and (max-width:960px)/**/
+{
+  #btn{margin-left:160px;}
+
+			
+}
+
+
